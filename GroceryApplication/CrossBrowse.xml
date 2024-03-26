@@ -1,0 +1,20 @@
+<suite name="GroceryApplication" parallel="tests" thread-count="2">
+	<test name="ChromTest">
+		<listeners>
+			<listener class-name="utilities.RetryListener" />
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="testCases.LoginPageTest"></class>
+			<class name="testCases.ManageLocationPageTest"></class>
+		</classes>
+	</test>
+	<test name="EdgeTest">
+		<parameter name="Browser" value="edge"></parameter>
+		<classes>
+			<class name="testCases.LoginPageTest"></class>
+			<class name="testCases.ManageLocationPageTest"></class>
+		</classes>
+	</test>
+</suite>

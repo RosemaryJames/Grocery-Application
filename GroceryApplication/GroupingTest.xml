@@ -1,0 +1,14 @@
+<suite name="Group">
+	<test name="GroupTest">
+		<groups>
+			<run>
+				<include name="SmokeTest"></include>
+			</run>
+		</groups>
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="testCases.LoginPageTest"></class>
+			<class name="testCases.LogOutTestPage"></class>
+		</classes>
+	</test>
+</suite>

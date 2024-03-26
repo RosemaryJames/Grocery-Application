@@ -1,0 +1,10 @@
+
+<suite name="GroceryApplication" parallel="tests" thread-count="2">
+	<test name="ChromTest">
+		
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="testCases.AddSliderTestPage"></class>
+		</classes>
+	</test>
+</suite>
