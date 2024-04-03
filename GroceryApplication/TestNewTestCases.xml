@@ -5,6 +5,13 @@
 		<parameter name="Browser" value="chrome"></parameter>
 		<classes>
 			<class name="testCases.AddSliderTestPage"></class>
+			<class name="testCases.AdminUserActionTestPage"></class>
+			<class name="testCases.DeliveryBoyTestPage"></class>
+			<class name="testCases.LoginPageTest"></class>
+			<class name="testCases.LogOutTestPage"></class>
+			<class name="testCases.ManageContentNewsTestPage"></class>
+			<class name="testCases.ManageLocationPageTest"></class>
+			<class name="testCases.ManageOrdersPageTest"></class>
 		</classes>
 	</test>
 </suite>

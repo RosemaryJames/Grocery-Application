@@ -11,6 +11,10 @@
 		</classes>
 	</test>
 	<test name="EdgeTest">
+		<listeners>
+			<listener class-name="utilities.RetryListener" />
+			<listener class-name="utilities.ExtenetReport" />
+		</listeners>
 		<parameter name="Browser" value="edge"></parameter>
 		<classes>
 			<class name="testCases.LoginPageTest"></class>

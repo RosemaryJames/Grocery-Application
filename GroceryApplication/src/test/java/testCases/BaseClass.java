@@ -33,7 +33,7 @@ public class BaseClass {
   public void beforeMethod(String browserName) throws IOException {
 	  testBasic();
 	  if(browserName.equals("chrome")) {
-		  System.setProperty("webdriver.chrome.driver", "C:\\Users\\TOSHOBA\\eclipse-workspace\\GroceryApplication\\src\\main\\resources\\driver\\chromedriver.exe");
+		  //System.setProperty("webdriver.chrome.driver", "C:\\Users\\TOSHOBA\\eclipse-workspace\\GroceryApplication\\src\\main\\resources\\driver\\chromedriver.exe");
 			driver= new ChromeDriver();  
 	  }
 	  else if(browserName.equals("edge")) {
