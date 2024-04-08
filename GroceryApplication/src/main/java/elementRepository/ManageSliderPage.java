@@ -27,12 +27,12 @@ public class ManageSliderPage {
 		ManageSliderPage.click();
 	}
 	
-	public void ManageSliderDeleteClick()
+	public void manageSliderDeleteClick()
 	{
 		ManageSliderDelete.click();
 	}
 	
-	public void ManageSliderDeleteConfirmationClick()
+	public void manageSliderDeleteConfirmationClick()
 	{
 		gu.acceptAlert(driver);
 	}

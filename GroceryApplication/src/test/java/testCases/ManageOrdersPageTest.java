@@ -25,12 +25,12 @@ public class ManageOrdersPageTest extends BaseClass{
 		  String actual=hp.verifyhomePage();
 		  Assert.assertEquals(actual, expected, Constant.lp_verifyLoginWithInvalidData);
 		  mo.manageOrdersPageClick();
-		  mo.ManageOrdersSearchClick();
-		  mo.ManageOrdersPaymentMode();
-		  mo.ManageOrdersStatus();
-		  mo.ManageOrdersSearchButtonClick();
-		  mo.JavaExecuter();
-		  mo.FluentWaitTime();
+		  mo.manageOrdersSearchClick();
+		  mo.waitForManageOrdersPaymentMode();
+		  mo.manageOrdersPaymentMode();
+		  mo.manageOrdersStatus();
+		  mo.manageOrdersSearchButtonClick();
+		  mo.scrollbyJavaExecuter();
 		  String paymentexpected=mo.readManageOrdersPagePaymentElementText();
 		  Assert.assertEquals("COD", paymentexpected, Constant.lp_verifyLoginWithInvalidData);
 		  String statusexpected=mo.readManageOrdersPageStatusElementText();

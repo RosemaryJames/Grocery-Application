@@ -23,15 +23,15 @@ public class AdminUserActionPage {
 	@FindBy(xpath = "//tr[1]//td[5]//a//i[@class='fa fa-lock']")
 	WebElement adminUnLock;
 	
-	public void AdminUserClick()
+	public void adminUserClick()
 	{
 		adminUser.click();
 	}
-	public void AdminLockClick()
+	public void adminLockClick()
 	{
 		adminLock.click();
 	}
-	public void AdminUnLockClick()
+	public void adminUnLockClick()
 	{
 		adminUnLock.click();
 	}

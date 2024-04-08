@@ -52,29 +52,29 @@ public class ManageOrdersPage {
 		ManageOrdersPage.click();
 	}
 	
-	public void ManageOrdersSearchClick()
+	public void manageOrdersSearchClick()
 	{
 		ManageOrdersSearch.click();
 	}
 	
-	public void ManageOrdersPaymentMode()
+	public void manageOrdersPaymentMode()
 	{
 		gu.selectDropDownValueusingVisibleText(ManageOrdersPaymentMode, "COD");
 	}
 	
-	public void ManageOrdersStatus()
+	public void manageOrdersStatus()
 	{
 		gu.selectDropDownValueusingVisibleText(ManageOrdersStatus, "UnPaid");
 	}
-	public void ManageOrdersSearchButtonClick()
+	public void manageOrdersSearchButtonClick()
 	{
 		ManageOrdersSearchButton.click();
 	}
-	public void FluentWaitTime()
+	public void waitForManageOrdersPaymentMode()
 	{
 		wu.fluventWaitElements(driver, ManageOrdersPaymentMode, "id", "pt",500);
 	}
-	public void JavaExecuter()
+	public void scrollbyJavaExecuter()
 	{
 		gu.scrolUsingJavaScript(driver,"0","15000");
 	}

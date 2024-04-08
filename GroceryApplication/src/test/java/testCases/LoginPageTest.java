@@ -47,7 +47,7 @@ public class LoginPageTest extends BaseClass {
 	  Assert.assertEquals(actual, expected,Constant.lp_verifyLoginWithInvalidData);
 	  
   }
-  @Test(dataProvider="data-providerinvalid", dataProviderClass=DataProviderSample.class)
+  @Test(dataProvider="data-providerinvalid", dataProviderClass=DataProviderForLogin.class)
   public void verifyLoginWithInvalidDataProvider(String username,String password) {
 	  lp=new LoginPage(driver);
 	 lp.sendUserName(username);
@@ -57,7 +57,7 @@ public class LoginPageTest extends BaseClass {
 	  String actual=lp.displayAlert();
 	  Assert.assertEquals(actual, expected, Constant.lp_verifyLoginWithInvalidData);
   }
-  @Test(dataProvider="data-providervalid", dataProviderClass=DataProviderSample.class)
+  @Test(dataProvider="data-providervalid", dataProviderClass=DataProviderForLogin.class)
   public void verifyLoginWithValidDataProvider(String username,String password) {
 	  lp=new LoginPage(driver);
 	 hp=new HomePage(driver);

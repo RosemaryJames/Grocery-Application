@@ -22,11 +22,11 @@ public class LogOutPage {
 	@FindBy(xpath = "//input[@name='username']")
 	WebElement userName;
 	
-	public void AdminClick()
+	public void adminClick()
 	{
 		AdminButton.click();
 	}
-	public void LogOutClick()
+	public void logOutClick()
 	{
 		LogOutButton.click();
 	}

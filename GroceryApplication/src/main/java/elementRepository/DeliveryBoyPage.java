@@ -34,32 +34,32 @@ public class DeliveryBoyPage {
 	
 	
 	
-	public void DeliveryBoyClick()
+	public void deliveryBoyClick()
 	{
 		deliveryBoy.click();
 	}
-	public void DeliveryBoyNewClick()
+	public void deliveryBoyNewClick()
 	{
 		deliveryBoyNew.click();
 	}
-	public void DeliveryBoyNameClick()
+	public void deliveryBoyNameClick()
 	{
 		gu.sendValueUsingJavaScript(driver, deliveryBoyName, "Rose");	
 	}
-	public void DeliveryBoyUserNameClick(String userName)
+	public void deliveryBoyUserNameClick(String userName)
 	{
 		
 		deliveryBoyUserName.sendKeys(userName+gu.generateCurrentDateAndTime());
 	}
-	public void DeliveryBoyPassClick()
+	public void deliveryBoyPassClick()
 	{
 		gu.sendValueUsingJavaScript(driver, deliveryBoyPass, "Jithin@123");
 	}
-	public void DeliveryBoySaveClick()
+	public void deliveryBoySaveClick()
 	{
 		gu.scrolUsingJavaScriptforclick(driver,deliveryBoySave);
 	}
-	public void DeliveryBoyPasswordClick()
+	public void deliveryBoyPasswordClick()
 	{
 		deliveryBoyPassword.click();
 	}

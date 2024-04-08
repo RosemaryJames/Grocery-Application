@@ -30,31 +30,31 @@ public class AddSliderPage {
 	@FindBy(xpath = "//button[@class='btn btn-danger']")
 	WebElement ManageSliderFilesave;
 
-	public void ManageSliderNewClick()
+	public void manageSliderNewClick()
 	{
 		ManageSliderNew.click();
 	}
-	public void ManageSliderFileClick()
+	public void manageSliderFileClick()
 	{
 		ManageSliderFile.sendKeys("C:\\Users\\TOSHOBA\\Desktop\\xpath.txt");
 		
 	}
-	public void ManageSliderValidFileClick()
+	public void manageSliderValidFileClick()
 	{
 		ManageSliderFile.sendKeys("C:\\Users\\TOSHOBA\\Desktop\\Capture1.png");
 		
 	}
-	public void ManageSliderFileLinkClick()
+	public void manageSliderFileLinkClick()
 	{
 		gu.sendValueUsingJavaScript(driver, ManageSliderFileLink, "imagelink");
 		
 	}
-	public void ManageSliderFileLinkValidClick()
+	public void manageSliderFileLinkValidClick()
 	{
 		gu.sendValueUsingJavaScript(driver, ManageSliderFileLink, "Capture");
 		
 	}
-	public void ManageSliderSaveClick()
+	public void manageSliderSaveClick()
 	{
 		ManageSliderFilesave.click();
 	}

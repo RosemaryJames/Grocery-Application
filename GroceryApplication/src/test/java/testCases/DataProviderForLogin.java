@@ -3,7 +3,7 @@ package testCases;
 import org.testng.annotations.DataProvider;
 
 
-public class DataProviderSample {
+public class DataProviderForLogin {
 	@DataProvider (name = "data-providervalid")
 	public Object[][] dpMethod1(){
 	return new Object[][] {{"admin","admin"}};

@@ -26,8 +26,8 @@ public class AdminUserActionTestPage extends BaseClass {
 		  String expected="Admin";
 		  String actual=hp.verifyhomePage();
 		  Assert.assertEquals(actual, expected, Constant.lp_verifyLoginWithInvalidData);
-		  aap.AdminUserClick();
-		  aap.AdminLockClick();
+		  aap.adminUserClick();
+		  aap.adminLockClick();
 		  String statusactive="Inactive";
 		  String statusexpected=aap.readAddUserStatusText(1, 3);
 		  Assert.assertEquals(statusactive, statusexpected,Constant.lp_verifyLoginWithInvalidData);
@@ -43,9 +43,9 @@ public class AdminUserActionTestPage extends BaseClass {
 		  String expected="Admin";
 		  String actual=hp.verifyhomePage();
 		  Assert.assertEquals(actual, expected, Constant.lp_verifyLoginWithInvalidData);
-		  aap.AdminUserClick();
-		  aap.AdminUnLockClick();
-		  aap.AdminUserClick();
+		  aap.adminUserClick();
+		  aap.adminUnLockClick();
+		  aap.adminUserClick();
 		  String statusactive="Active";
 		  String statusexpected=aap.readAddUserStatusText(1, 3);
 		  Assert.assertEquals(statusactive, statusexpected,Constant.lp_verifyLoginWithInvalidData);

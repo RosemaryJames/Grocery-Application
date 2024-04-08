@@ -29,8 +29,8 @@ public class LogOutTestPage extends BaseClass{
 			  String expected="Admin";
 			  String actual=hp.verifyhomePage();
 			  Assert.assertEquals(actual, expected, Constant.lp_verifyLoginWithInvalidData);
-			  lo.AdminClick();
-			  lo.LogOutClick();
+			  lo.adminClick();
+			  lo.logOutClick();
 			  String Userexpected=lo.readLogOutPageText();
 			  Assert.assertNull(null, Userexpected);
 	}

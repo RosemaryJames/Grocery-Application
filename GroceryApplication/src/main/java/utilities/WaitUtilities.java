@@ -20,10 +20,19 @@ public class WaitUtilities {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(duration));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
+	public void explicitWaitUntilWebElementClickable(WebDriver driver, WebElement element, int duration) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(duration));
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+		}
+	public void explicitWaitUntilWebElementSelected(WebDriver driver, WebElement element, int duration) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(duration));
+		wait.until(ExpectedConditions.elementToBeSelected(element));
+		}
 	public void fluventWaitElements(WebDriver driver, WebElement element, String attribute, String attributeValue,
 			int total) {
 		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(total))
 				.pollingEvery(Duration.ofSeconds(2)).ignoring(NoSuchElementException.class);
 		fluentWait.until(ExpectedConditions.attributeContains(element, attribute, attributeValue));
 	}
+	
 }

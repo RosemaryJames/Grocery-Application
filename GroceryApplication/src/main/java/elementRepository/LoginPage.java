@@ -14,7 +14,7 @@ public class LoginPage {
 		PageFactory.initElements(driver, this);// with page factory
 	}
 
-//By userNameField=By.name("username");//without pagefactory
+
 	@FindBy(xpath = "//input[@name='username']") // with pagefactory
 	WebElement userNameField;
 	@FindBy(xpath = "//input[@name='password']")
